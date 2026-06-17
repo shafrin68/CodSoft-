@@ -1,0 +1,29 @@
+# Simple Recommendation System
+
+movies = {
+    "Action": ["KGF", "Leo", "Vikram"],
+    "Comedy": ["Boss Engira Bhaskaran", "OK OK", "Kalakalappu"],
+    "Drama": ["Soorarai Pottru", "Jai Bhim", "96"],
+    "Romance": ["Love Today", "Sita Ramam", "Vinnaithaandi Varuvaayaa"]
+}
+
+print("Movie Recommendation System")
+print("Available Categories:")
+print("Action, Comedy, Drama, Romance")
+
+choice = input("Enter your favorite category: ")
+
+if choice == "Action":
+    print("Recommended Movies:", movies["Action"])
+
+elif choice == "Comedy":
+    print("Recommended Movies:", movies["Comedy"])
+
+elif choice == "Drama":
+    print("Recommended Movies:", movies["Drama"])
+
+elif choice == "Romance":
+    print("Recommended Movies:", movies["Romance"])
+
+else:
+    print("Sorry! Category not found.")
